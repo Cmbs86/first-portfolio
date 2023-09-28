@@ -1,0 +1,323 @@
+:root {
+  /* colors */
+  --main-bg-color: #ffca0a;
+  --secondary-bg-color: #0a0a0a;
+  --tertiary-bg-color: #f5f5f5;
+
+  /* fonts */
+  --font-nav-header: "M PLUS 1 Code", monospace;
+  --font-content: "Kreon", serif;
+  --font-end-page: "Press Start 2P", cursive;
+  /* Extra one */
+  --font-extra: "Gloock", serif;
+
+  /* Font colors */
+
+  --font-color-one: #ffca0a;
+  --font-color-two: #0a0a0a;
+  --font-color-three: #f5f5f5;
+}
+
+/* RESETS */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 14px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: 50px;
+  /* border: 1px solid yellow; */
+}
+
+body {
+  background: var(--secondary-bg-color);
+}
+
+/* MOBILE HEADER/NAV */
+
+.main-container {
+  max-width: 1368px;
+  margin: auto 0;
+}
+
+.nav-container {
+  /* border: 2px solid red; */
+  background-color: var(--main-bg-color);
+  display: flex;
+}
+
+.navbar {
+  /* border: 3px solid black; */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+
+li {
+  font-family: var(--font-nav-header);
+}
+
+a {
+  font-size: 1.4rem;
+  color: var(--font-color-two);
+  font-weight: 600;
+}
+
+.icons {
+  display: none;
+}
+
+/* MOBILE INTRO */
+
+.introduction {
+  display: flex;
+  /* border: 1px solid red; */
+  height: 20vh;
+  flex-direction: column;
+}
+
+.introduction_header,
+.introduction_text {
+  padding: 25px;
+  /* border: 1px solid red; */
+  font-family: var(--font-nav-header);
+  font-size: 1.8rem;
+  color: var(--font-color-three);
+}
+
+.introduction_text {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid yellowgreen; */
+  height: 100vh;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--font-color-three);
+  /* border: 3px solid red; */
+  height: 40vh;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin: auto;
+  color: var(--font-color-two);
+  font-family: var(--font-nav-header);
+  border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.card_text-1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.card_text-2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card_img {
+}
+
+/* DESKTOP HEADER/NAV */
+
+@media (min-width: 768px) {
+  .main-container {
+    display: flex;
+  }
+
+  .nav-container {
+    /* border: 2px solid red; */
+    background-color: var(--main-bg-color);
+    /* width: 150px; */
+    /* max-width: 150px; */
+    flex-basis: 150px;
+  }
+
+  .navbar {
+    min-height: 100vh;
+    flex-direction: column;
+    /* border: 1px solid red; */
+  }
+
+  li {
+    /* border: 1px solid black; */
+    height: 100%;
+    font-family: var(--font-nav-header);
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+  }
+
+  a {
+    font-size: 1.7rem;
+    color: var(--font-color-two);
+    font-weight: 600;
+    position: fixed;
+    /* display: inline-block; */
+    /* vertical-align: top; */
+    transform: translate(0, 100%) rotate(-90deg);
+    transform-origin: 0 0;
+    /* white-space: nowrap; */
+    /* border: 2px solid red; */
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  i {
+    font-size: 30px;
+    color: var(--secondary-bg-color);
+    transform: translate(0, 0) rotate(90deg);
+    transform-origin: 0, 0;
+  }
+  /* INTRO DESKTOP */
+
+  .wrapper {
+    display: flex;
+    border: 1px solid red;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 10rem;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+    
+  }
+
+  .introduction {
+    border: 1px solid red;
+    align-items: center;
+  }
+
+  .introduction_header,
+  .introduction_text {
+    /* padding: 25px; */
+    /* border: 1px solid red; */
+    font-family: var(--font-nav-header);
+    font-size: 1.8rem;
+    color: var(--font-color-three);
+  }
+
+  .introduction_text {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+
+  /* SKILLS DESKTOP */
+  /* .skillset_section{
+
+  display: flex;
+  /* flex-direction: column; */
+
+
+/* } */ 
+  .skills {
+    /* display: flex; */
+    /* flex-direction: column; */
+
+    flex-wrap: wrap;
+    border: 1px solid yellowgreen;
+    align-items: center;
+    margin-bottom: 100px;
+
+  }
+
+  .card {
+    background-color: var(--font-color-three);
+    border: 3px solid red;
+    /* height: 40vh; */
+    /* width: 300px; */
+    /* display: flex; */
+    /* flex-direction: column ; */
+    /* gap: 20px; */
+    /* margin: auto; */
+    color: var(--font-color-two);
+    font-family: var(--font-nav-header);
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+
+  .card_text-1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .card_text-2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .project_text {
+    color: var(--font-color-three);
+    /* margin-left: 450px; */
+    font-family: var(--font-nav-header);
+    font-size: 2rem;
+    /* display: flex; */
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid red;
+    margin-bottom: 70px;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* margin-left: 450px; */
+    place-items: center;
+    border: 1px solid yellowgreen;
+    height: 100vh;
+
+    /* width: 1200px; */
+    /* background: var(--tertiary-bg-color); */
+  }
+
+  .grid_card {
+    height: 100px;
+    width: 100px;
+  }
+
+  .projects_card1 {
+    border: 1px solid red;
+    background-image: url(./assets/images/SL-043020-30500-40.jpg);
+  }
+
+  .projects_card2 {
+    border: 1px solid red;
+    background-image: url(./assets/images/SL-043020-30500-40.jpg);
+  }
+
+  .projects_card3 {
+    border: 1px solid red;
+    background-image: url(./assets/images/SL-043020-30500-40.jpg);
+  }
+
+  .fa-code {
+    color: var(--font-color-three);
+    rotate: 90deg;
+  }
+}
