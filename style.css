@@ -1,8 +1,8 @@
 :root {
   /* colors */
   --main-bg-color: #ffca0a;
-  --secondary-bg-color: #0a0a0a;
-  --tertiary-bg-color: #f5f5f5;
+  --secondary-bg-color: #141414;
+  --tertiary-bg-color: #ebebeb;
 
   /* fonts */
   --font-nav-header: "M PLUS 1 Code", monospace;
@@ -14,8 +14,8 @@
   /* Font colors */
 
   --font-color-one: #ffca0a;
-  --font-color-two: #0a0a0a;
-  --font-color-three: #f5f5f5;
+  --font-color-two: #141414;
+  --font-color-three: #ebebeb;
 }
 
 /* RESETS */
@@ -124,8 +124,18 @@ a {
   margin-bottom: 20px;
   font-family: var(--font-nav-header);
   border-radius: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+/* https://smoothshadows.com/#djEsMiw1LDAuMTYsMTAsLTMsNzcsI2ZmY2EwYSwjZjNmNGY2LCNmZmZmZmYsMQ%3D%3D */
+/* box-shadow: 3px -0px 0px rgba(255, 202, 10, 0.16),
+  12px -0px 2px rgba(255, 202, 10, 0.13),
+  28px -1px 4px rgba(255, 202, 10, 0.10),
+  49px -2px 6px rgba(255, 202, 10, 0.06),
+  77px -3px 10px rgba(255, 202, 10, 0.03); */
+
+
+
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
 }
 
 .card_text-1 {
@@ -158,6 +168,7 @@ a {
   place-items: center;
   gap: 30px;
   margin-bottom: 50px;
+  
 }
 
 .grid_card {
@@ -172,11 +183,16 @@ a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
+  
 }
 
+
+
 .projects_card1 {
-  border: 1px solid var(--main-bg-color);
+  /* border: 1px solid var(--main-bg-color); */
   background-image: url(./assets/images/25516.jpg);
+
 }
 
 .projects_card2 {
@@ -187,6 +203,9 @@ a {
   background-image: url(./assets/images/25516.jpg);
 }
 
+
+
+
 /* MOBILE FORM */
 
 .form {
@@ -194,6 +213,7 @@ a {
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 50px;
+
 }
 
 h3 {
@@ -225,16 +245,18 @@ textarea {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-family: var(--font-nav-header);
 }
 
 input[type="submit"] {
   background-color: var(--main-bg-color);
   color: var(--font-color-two);
   font-weight: 500;
-  padding: 10px 20px;
+  padding: 10px 70px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  
 }
 
 /* FOOTER MOBILE */
