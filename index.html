@@ -23,73 +23,135 @@
     <div class="main-container">
       <nav class="nav-container">
         <ul class="navbar">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
           <div class="icons">
             <li>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/" target="blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/" target="blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </li>
           </div>
         </ul>
       </nav>
       <div class="wrapper">
-      <div class="introduction">
-        <h1 class="introduction_header">
-          Hi, I'm Carlos Sousa, 37 years, DCI Student.
-        </h1>
-        <p class="introduction_text">
-          I am currently on a path to become a Full-Stack Web Developer. Please,
-          bear with me while I try to get there. =)
-        </p>
-      </div>
-      <main class="skillset_section">
-        <section class="skills">
-          <div class="card card_1">
-            <h3 class="card_text-1">Languages I speak:</h3>
-            <div class="card_img-1">
-              <img src="./assets/images/html.png" alt="html icon" />
-              <img src="./assets/images/css.png" alt="css icon" />
-              <img src="./assets/images/sass.png" alt="sass icon" />
+        <div id="about" class="introduction">
+          <h1 class="introduction_header">
+            Hey, I'm Carlos Sousa, a 37-year-old DCI student diving headfirst
+            into the world of web development.
+          </h1>
+          <p class="introduction_text">
+            I may not have all the answers, but I've got determination and a
+            knack for finding bugs (the digital kind, not the creepy-crawly
+            ones). Join me on this web development journey, where we embrace the
+            quirks, celebrate the small wins, and have a good laugh at the
+            occasional digital mishap. Let's make the web a bit more
+            interesting, one line of code at a time."
+          </p>
+        </div>
+        <main class="skillset_section">
+          <section class="skills">
+            <div class="card card_1">
+              <h3 class="card_text-1">Languages in my toolkit:</h3>
+              <div class="card_img-1">
+                <img src="./assets/images/html.png" alt="html icon" />
+                <img src="./assets/images/css.png" alt="css icon" />
+                <img src="./assets/images/sass.png" alt="sass icon" />
+              </div>
+              <h3 class="card_text-1">Crafting with:</h3>
+              <div class="card_img-1">
+                <img
+                  src="./assets/images/visual-studio-code.png"
+                  alt="vscode icon"
+                />
+                <img src="./assets/images/github.png" alt="github icon" />
+                <img src="./assets/images/git.png" alt="git icon" />
+              </div>
             </div>
-            <h3 class="card_text-1">Devtools:</h3>
-            <div class="card_img-1">
-              <img
-                src="./assets/images/visual-studio-code.png"
-                alt="vscode icon"
+            <div class="card card_2">
+              <h3 class="card_text-2">Languages and Devtools I'm exploring:</h3>
+              <div class="card_img-2">
+                <img
+                  src="./assets/images/javascript.png"
+                  alt="javascript icon"
+                />
+                <img src="./assets/images/node-js.png" alt="node icon" />
+                <img src="./assets/images/react.png" alt="react icon" />
+              </div>
+            </div>
+          </section>
+
+          <h3 class="project_text">
+            <span><i class="fa-solid fa-code"></i></span> Projects I'm working
+            on: <span><i class="fa-solid fa-code"></i></span>
+          </h3>
+
+          <section id="projects" class="projects">
+            <div class="grid_card projects_card1"></div>
+
+            <div class="grid_card projects_card2"></div>
+
+            <div class="grid_card projects_card3"></div>
+          </section>
+          <div class="form">
+            <h3>Let's Collaborate!</h3>
+            <p>Fill in the form below, and I'll get back to you!</p>
+            <form id="contact" action="#" method="post">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name here"
+                required
               />
-              <img src="./assets/images/github.png" alt="github icon" />
-            </div>
+
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+
+              <label for="message">How can I help you?</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Enter your message here"
+                rows="5"
+                required
+              ></textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
           </div>
-          <div class="card card_2">
-            <h3 class="card_text-2">Languages and Devtools I'm learning:</h3>
-            <div class="card_img-2">
-              <img src="./assets/images/javascript.png" alt="javascript icon" />
-              <img src="./assets/images/node-js.png" alt="node icon" />
-              <img src="./assets/images/react.png" alt="react icon" />
-            </div>
+        </main>
+        <footer>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
-        </section>
-
-        <h3 class="project_text">
-          <span><i class="fa-solid fa-code"></i></span> Projects I have
-          acomplished so far: <span><i class="fa-solid fa-code"></i></span>
-        </h3>
-
-        <section class="projects">
-          <div class="grid_card projects_card1"></div>
-
-          <div class="grid_card projects_card2"></div>
-
-          <div class="grid_card projects_card3"></div>
-        </section>
-      </main></div>
+          <p class="copyright">&copy; 2023 All Rights Reserved</p>
+        </footer>
+      </div>
     </div>
   </body>
-  Foto von
+  <!-- Foto von
   <a
     href="https://unsplash.com/de/@fkaregan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
     >Samuel Regan-Asante</a
@@ -103,5 +165,5 @@
     href="https://www.freepik.com/free-vector/neon-style-coming-soon-glowing-background-design_8562880.htm#query=coming%20soon&position=4&from_view=search&track=ais"
     >Image by starline</a
   >
-  on Freepik
+  on Freepik -->
 </html>
